@@ -1,4 +1,4 @@
-# Universal Robots Data Receiver
+# Socket to CSV Data Receiver
 
 This Python application allows you to receive data from a client using a socket connection and save the received data to a CSV file. It provides a simple graphical user interface (GUI) for configuring the server's IP address and port, as well as starting and stopping the server.
 
