@@ -4,6 +4,7 @@ from tkinter import *
 from tkinter import messagebox
 from datetime import datetime
 import select
+from PIL import Image, ImageTk
 
 
 # Declare a global variable to keep track of the server status
@@ -86,7 +87,7 @@ def stop_button_callback():
 
 # ---------------------------UI--------------------------------------------------------------
 window = Tk()
-window.title("UNIVERSAL ROBOTS: Socket to CSV")
+window.title("Socket to CSV")
 window.config(padx=20, pady=20, bg="white")
 
 
@@ -111,6 +112,6 @@ runn_button.grid(row=3, column=0, pady=(20, 0))
 
 # Stop Button
 stop_button = Button(text="Stop", command=stop_button_callback, font=("Arial", 14), state="disabled")
-stop_button.grid(row=3, column=1, pady=(20, 0))
+stop_button.grid(row=3, column=2, pady=(20, 0))
 
 window.mainloop()
